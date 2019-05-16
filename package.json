@@ -1,0 +1,25 @@
+{
+  "name": "koa-starter",
+  "version": "0.0.1",
+  "description": "build backend application with koa and nunjucks :sparkles:",
+  "main": "app.js",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "nunjucks": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ZQ-jhon/koa-starter.git"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "zq-jhon",
+  "license": "MIT"
+}
