@@ -6,7 +6,7 @@ First step: quick-start
 Second step: MVC construct
 
 
-these articles record my minds for learn Koa library, if you think it's helpful, **starred this project** 
+these articles record my minds for learn Koa library, if you think it's helpful, **[starred this project](https://github.com/ZQ-jhon/koa-starter)** 
 
 
 ## :bookmark: Todo list
@@ -16,12 +16,12 @@ these articles record my minds for learn Koa library, if you think it's helpful,
 
 
 ## :bulb: Useage
-```bash
+```powershell
 $ git clone git@github.com:ZQ-jhon/koa-starter.git
 
 $ npm start
 ```
-then, visit localhost:3000
+then, visit  [localhost:3000](localhost:3000)
 
 ## :busts_in_silhouette: Join the build
 if you want to build this project together, welcome PR
