@@ -20,7 +20,7 @@
     },
     "scripts": {
         "build": "tsc",
-        "start": "npm run build && cp src/views/form.html build/views/form.html && node build/app.js"
+        "start": "npm run build && node build/app.js"
     },
     "repository": {
         "type": "git",
