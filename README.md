@@ -19,6 +19,8 @@ these articles record my minds for learn Koa library, if you think it's helpful,
 ```powershell
 $ git clone git@github.com:ZQ-jhon/koa-starter.git
 
+$ npm install
+
 $ npm start
 ```
 then, visit  [localhost:3000](localhost:3000)
