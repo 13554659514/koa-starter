@@ -12,9 +12,12 @@ these articles record my minds for learn Koa library, if you think it's helpful,
 ## :bookmark: Todo list
 - [x] :building_construction: splited folders by MVC structure
 - [x] :label: adding typescript supports
+- [ ] :Adding logs: adding logging middleware
+- [ ] :bento: adding static assets server
 - [ ] :construction: adding unit-test for controller and views
+- [ ] :checkered_flag: adding deficient specification, such as commit-lint, husky, es-lint
 
-
+*icon using specification from : [https://gitmoji.carloscuesta.me/](https://gitmoji.carloscuesta.me/)*
 ## :bulb: Useage
 ```powershell
 $ git clone git@github.com:ZQ-jhon/koa-starter.git
