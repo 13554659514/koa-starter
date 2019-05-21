@@ -1,4 +1,4 @@
 const nunjucksConfig = {
-    nunjucksPath: './assets/templates'
+    nunjucksPath: './build/static/templates'
 }
 export = nunjucksConfig;

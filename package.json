@@ -7,6 +7,8 @@
         "koa": "^2.7.0",
         "koa-bodyparser": "^4.2.1",
         "koa-router": "^7.4.0",
+        "koa-static": "^5.0.0",
+        "nodemon": "^1.19.0",
         "nunjucks": "^3.2.0",
         "webpack": "^4.31.0"
     },
@@ -14,13 +16,15 @@
         "@types/koa": "^2.0.48",
         "@types/koa-bodyparser": "^4.2.2",
         "@types/koa-router": "^7.0.40",
+        "@types/koa-static": "^4.0.1",
         "@types/node": "^12.0.0",
         "@types/nunjucks": "^3.1.1",
         "typescript": "^3.4.5"
     },
     "scripts": {
-        "build": "tsc",
-        "start": "npm run build && node build/app.js"
+        "build": "rm -f /build && tsc",
+        "copy": "cp -r -f src/static build/static ",
+        "start": "npm run build && npm run copy && npx nodemon build/app.js"
     },
     "repository": {
         "type": "git",
