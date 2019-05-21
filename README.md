@@ -16,6 +16,7 @@ these articles record my minds for learn Koa library, if you think it's helpful,
 - [ ] :loud_sound: adding logging middleware
 - [ ] :construction: adding unit-test for controller
 - [ ] :checkered_flag: adding deficient specification, such as commit-lint, husky, es-lint
+- [ ] :building_construction: adding building tools, like parcel~
 
 *icon using specification from : [https://gitmoji.carloscuesta.me/](https://gitmoji.carloscuesta.me/)*
 ## :bulb: Useage
