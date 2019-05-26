@@ -1,4 +1,4 @@
-import { render, configure } from 'nunjucks';
+import { configure, render } from 'nunjucks';
 import { nunjucksPath } from '../config';
 // 配置 nunjucks
 configure(nunjucksPath, { autoescape: true });

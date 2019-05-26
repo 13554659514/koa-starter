@@ -3,7 +3,7 @@ import Router from 'koa-router';
 const renderForm = require('../views/renderForm');
 export = (app: Application) => {
   app.use(async (ctx, next) => {
-    if (ctx.request.url == '/index') {
+    if (ctx.request.url === '/index') {
       ctx.response.type = 'text/html';
       ctx.body = renderForm({ name: 'Hello, nunjucks' });
     }
@@ -19,4 +19,4 @@ export = (app: Application) => {
 
   // add router middleware:
   app.use(new Router().routes());
-}
+};

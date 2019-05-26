@@ -1,40 +1,53 @@
 {
-    "name": "koa-starter",
-    "version": "0.0.1",
-    "description": "build backend application with koa and nunjucks :sparkles:",
-    "main": "app.js",
-    "dependencies": {
-        "koa": "^2.7.0",
-        "koa-bodyparser": "^4.2.1",
-        "koa-router": "^7.4.0",
-        "koa-static": "^5.0.0",
-        "log4js": "^4.3.0",
-        "nodemon": "^1.19.0",
-        "nunjucks": "^3.2.0",
-        "webpack": "^4.31.0"
-    },
-    "devDependencies": {
-        "@types/koa": "^2.0.48",
-        "@types/koa-bodyparser": "^4.2.2",
-        "@types/koa-router": "^7.0.40",
-        "@types/koa-static": "^4.0.1",
-        "@types/log4js": "^2.3.5",
-        "@types/node": "^12.0.0",
-        "@types/nunjucks": "^3.1.1",
-        "typescript": "^3.4.5"
-    },
-    "scripts": {
-        "build": "rm -f /build && tsc",
-        "copy": "cp -r -f src/static build/static ",
-        "start": "npm run build && npm run copy && npx nodemon build/app.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:ZQ-jhon/koa-starter.git"
-    },
-    "keywords": [
-        "koa"
-    ],
-    "author": "zq-jhon",
-    "license": "MIT"
+  "name": "koa-starter",
+  "version": "0.0.1",
+  "description": "build backend application with koa and nunjucks :sparkles:",
+  "main": "app.js",
+  "dependencies": {
+    "codelyzer": "^5.0.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^4.3.0",
+    "nodemon": "^1.19.0",
+    "nunjucks": "^3.2.0",
+    "tslint": "^5.16.0",
+    "webpack": "^4.31.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^7.6.0",
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.2",
+    "@types/koa-router": "^7.0.40",
+    "@types/koa-static": "^4.0.1",
+    "@types/log4js": "^2.3.5",
+    "@types/node": "^12.0.0",
+    "@types/nunjucks": "^3.1.1",
+    "husky": "^2.3.0",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "build": "rm -f /build && tsc",
+    "copy": "cp -r -f src/static build/static ",
+    "start": "npm run build && npm run copy && npx nodemon build/app.js",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint:fix": "tslint -c tslint.json 'src/**/*.ts' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ZQ-jhon/koa-starter.git"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "zq-jhon",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  }
 }
