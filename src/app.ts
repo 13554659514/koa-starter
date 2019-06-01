@@ -1,20 +1,28 @@
 import Koa from 'koa';
 import server from 'koa-static';
+import path from 'path';
+import loggerFn from './middleware/logger.middleware';
 import routerFn from './routers/router';
-// import { bodyParser } from 'koa-bodyparser';
+
+// @SEE Type Middleware in @Koa：
+// type Middleware<T> = (context: T, next: () => Promise<any>) => any;
+
+
+// parse http request body
 const bodyParser = require('koa-bodyparser');
-const path = require('path');
 const app = new Koa();
 app.use(bodyParser());
+// using logger middleware
+app.use(loggerFn);
 
-// 配置静态资源
+// 配置静态资源目录
 const staticPath = '/static/';
+// 使用 静态服务器 中间件
 app.use(server(
   path.join(__dirname, staticPath),
 ));
+
+
+
 routerFn(app);
-// console.log(path.join(__dirname, staticPath));
-app.listen(3000, () => {
-  // console.log("server is running at http://localhost:3000");
-  // console.log(`see assets at http:localhost:3000/images/vscode.png`);
-});
+app.listen(3000, () => { console.log(123); });
