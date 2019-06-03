@@ -14,7 +14,7 @@ these articles record my minds for learn Koa library, if you think it's helpful,
 - [x] :label: adding typescript supports
 - [x] :bento: adding static assets server
 - [x] :checkered_flag: adding deficient specification, such as commit-lint, husky, es-lint
-- [ ] :loud_sound: adding logging middleware
+- [x] :loud_sound: adding logging middleware
 - [ ] :construction: adding unit-test for controller
 - [ ] :building_construction: adding building tools, like parcel~
 
